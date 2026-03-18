@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
-import { Geist, Geist_Mono, Crimson_Text, Press_Start_2P } from "next/font/google"
+import { Geist, Geist_Mono, Crimson_Text } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
@@ -11,10 +11,7 @@ const _crimsonText = Crimson_Text({
   style: ["normal", "italic"],
   subsets: ["latin"],
 })
-const _pressStart2P = Press_Start_2P({
-  weight: "400",
-  subsets: ["latin"],
-})
+
 
 export const metadata: Metadata = {
   title: "MY MORDI",
