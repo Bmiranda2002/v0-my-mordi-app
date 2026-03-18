@@ -88,16 +88,23 @@ export default function MyMordi() {
           <AffirmationDisplay message={currentAffirmation} onComplete={() => setCurrentAffirmation(null)} />
         )}
 
-        <div className="shrink-0 bg-black/80 p-3 pb-[max(1.5rem,env(safe-area-inset-bottom))]">
-          {showConfession ? (
-            <ConfessionInput onSubmit={handleConfessionSubmit} onCancel={() => setShowConfession(false)} />
-          ) : (
-            <RitualMenu
-              onConfess={() => setShowConfession(true)}
-              onRitualComplete={handleRitualComplete}
-              mordiState={mordiState}
-            />
-          )}
+        <div className="shrink-0 relative p-3 pb-[max(1.5rem,env(safe-area-inset-bottom))]">
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: "url('/images/bottom-texture.jpg')" }}
+          />
+          <div className="absolute inset-0 bg-black/80" />
+          <div className="relative z-10">
+            {showConfession ? (
+              <ConfessionInput onSubmit={handleConfessionSubmit} onCancel={() => setShowConfession(false)} />
+            ) : (
+              <RitualMenu
+                onConfess={() => setShowConfession(true)}
+                onRitualComplete={handleRitualComplete}
+                mordiState={mordiState}
+              />
+            )}
+          </div>
         </div>
       </div>
     </main>
