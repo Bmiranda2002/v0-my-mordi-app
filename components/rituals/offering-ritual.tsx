@@ -31,12 +31,13 @@ export function OfferingRitual({ onComplete, onCancel }: OfferingRitualProps) {
     <div className="relative space-y-4 py-2">
       <button
         onClick={onCancel}
-        className="absolute -top-1 right-0 font-mono text-sm text-white hover:text-white/80 drop-shadow-[0_1px_2px_rgba(0,0,0,1)]"
+        className="absolute -top-1 right-0 text-sm text-white hover:text-white/80 drop-shadow-[0_1px_2px_rgba(0,0,0,1)]"
+        style={{ fontFamily: "var(--font-pixel)" }}
       >
         [X]
       </button>
 
-      <p className="text-center font-mono text-xs uppercase tracking-widest text-white drop-shadow-[0_1px_2px_rgba(0,0,0,1)]">
+      <p className="text-center text-xs uppercase tracking-widest text-white drop-shadow-[0_1px_2px_rgba(0,0,0,1)]" style={{ fontFamily: "var(--font-pixel)" }}>
         {confirming ? "confirm offering" : "choose offering"}
       </p>
 
@@ -45,7 +46,7 @@ export function OfferingRitual({ onComplete, onCancel }: OfferingRitualProps) {
           <div className="w-20 h-20 flex items-center justify-center bg-white border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             <span className="text-4xl text-black">{offerings[selected].symbol}</span>
           </div>
-          <p className="font-mono text-sm text-white uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,1)]">
+          <p className="text-sm text-white uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,1)]" style={{ fontFamily: "var(--font-pixel)" }}>
             {offerings[selected].label}
           </p>
           <div className="flex gap-3">
@@ -58,12 +59,13 @@ export function OfferingRitual({ onComplete, onCancel }: OfferingRitualProps) {
                 bg-black text-white
                 border-4 border-white
                 px-4 py-2 
-                font-mono text-xs uppercase tracking-widest
+                text-xs uppercase tracking-widest
                 shadow-[3px_3px_0px_0px_rgba(255,255,255,0.8)]
                 transition-all duration-100
                 hover:translate-x-[2px] hover:translate-y-[2px]
                 hover:shadow-[1px_1px_0px_0px_rgba(255,255,255,0.8)]
               "
+              style={{ fontFamily: "var(--font-pixel)" }}
             >
               back
             </button>
@@ -73,12 +75,13 @@ export function OfferingRitual({ onComplete, onCancel }: OfferingRitualProps) {
                 bg-white text-black
                 border-4 border-black
                 px-4 py-2 
-                font-mono text-xs uppercase tracking-widest
+                text-xs uppercase tracking-widest
                 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]
                 transition-all duration-100
                 hover:translate-x-[2px] hover:translate-y-[2px]
                 hover:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]
               "
+              style={{ fontFamily: "var(--font-pixel)" }}
             >
               offer
             </button>
@@ -103,7 +106,7 @@ export function OfferingRitual({ onComplete, onCancel }: OfferingRitualProps) {
               "
             >
               <span className="text-xl text-black">{offering.symbol}</span>
-              <span className="font-mono text-[8px] uppercase text-black">{offering.label}</span>
+              <span className="text-[8px] uppercase text-black" style={{ fontFamily: "var(--font-pixel)" }}>{offering.label}</span>
             </button>
           ))}
         </div>

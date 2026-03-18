@@ -47,12 +47,13 @@ export function CandleRitual({ onComplete, onCancel }: CandleRitualProps) {
     <div className="relative space-y-4 py-2">
       <button
         onClick={onCancel}
-        className="absolute -top-1 right-0 font-mono text-sm text-white hover:text-white/80 drop-shadow-[0_1px_2px_rgba(0,0,0,1)]"
+        className="absolute -top-1 right-0 text-sm text-white hover:text-white/80 drop-shadow-[0_1px_2px_rgba(0,0,0,1)]"
+        style={{ fontFamily: "var(--font-pixel)" }}
       >
         [X]
       </button>
 
-      <p className="text-center font-mono text-xs uppercase tracking-widest text-white drop-shadow-[0_1px_2px_rgba(0,0,0,1)]">
+      <p className="text-center text-xs uppercase tracking-widest text-white drop-shadow-[0_1px_2px_rgba(0,0,0,1)]" style={{ fontFamily: "var(--font-pixel)" }}>
         hold to sustain the flame
       </p>
 
@@ -90,7 +91,7 @@ export function CandleRitual({ onComplete, onCancel }: CandleRitualProps) {
           ${isHolding ? "translate-x-[4px] translate-y-[4px] shadow-none bg-black" : ""}
         `}
       >
-        <span className={`font-mono text-2xl ${isHolding ? "text-white" : "text-black"}`}>☼</span>
+        <span className={`text-2xl ${isHolding ? "text-white" : "text-black"}`} style={{ fontFamily: "var(--font-pixel)" }}>☼</span>
       </button>
     </div>
   )

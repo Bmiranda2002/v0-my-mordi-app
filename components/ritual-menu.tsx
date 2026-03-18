@@ -98,7 +98,7 @@ function PixelIconButton({
           style={{ imageRendering: "pixelated" }}
         />
       </div>
-      <span className="font-mono text-[8px] uppercase tracking-wider text-white drop-shadow-[0_1px_2px_rgba(0,0,0,1)]">
+      <span className="text-[8px] uppercase tracking-wider text-white drop-shadow-[0_1px_2px_rgba(0,0,0,1)]" style={{ fontFamily: "var(--font-pixel)" }}>
         {label}
       </span>
     </button>

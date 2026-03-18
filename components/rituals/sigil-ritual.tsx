@@ -117,12 +117,13 @@ export function SigilRitual({ onComplete, onCancel }: SigilRitualProps) {
     <div className="relative space-y-3 py-2">
       <button
         onClick={onCancel}
-        className="absolute -top-1 right-0 font-mono text-sm text-white hover:text-white/80 drop-shadow-[0_1px_2px_rgba(0,0,0,1)]"
+        className="absolute -top-1 right-0 text-sm text-white hover:text-white/80 drop-shadow-[0_1px_2px_rgba(0,0,0,1)]"
+        style={{ fontFamily: "var(--font-pixel)" }}
       >
         [X]
       </button>
 
-      <p className="text-center font-mono text-xs uppercase tracking-widest text-white drop-shadow-[0_1px_2px_rgba(0,0,0,1)]">
+      <p className="text-center text-xs uppercase tracking-widest text-white drop-shadow-[0_1px_2px_rgba(0,0,0,1)]" style={{ fontFamily: "var(--font-pixel)" }}>
         trace the pattern
       </p>
 
