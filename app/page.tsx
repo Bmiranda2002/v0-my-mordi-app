@@ -56,11 +56,10 @@ export default function MyMordi() {
     <main className="relative h-[100dvh] w-full max-w-md mx-auto overflow-hidden bg-black crt-effect">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/background-messy.png"
+          src="/images/background-room.jpg"
           alt="Mordi's Room"
           fill
           className="object-cover"
-          style={{ imageRendering: "pixelated" }}
           priority
         />
       </div>
