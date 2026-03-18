@@ -85,7 +85,7 @@
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
+  --font-sans: "Tamagotchi", "Geist", "Geist Fallback";
   --font-serif: "Crimson Text", "Georgia", serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback";
   /* Tamagotchi font variable */
