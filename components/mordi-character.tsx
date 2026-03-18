@@ -37,7 +37,7 @@ export function MordiCharacter({ state, onTap }: MordiCharacterProps) {
     >
       <div className="relative z-10">
         <Image
-          src="/images/my-20mordi.png"
+          src="/images/mordi-character.png"
           alt="Mordi - Angel Rabbit"
           width={800}
           height={960}
