@@ -39,9 +39,9 @@ export function MordiCharacter({ state, onTap }: MordiCharacterProps) {
         <Image
           src="/images/mordi-character.png"
           alt="Mordi - Angel Rabbit"
-          width={800}
-          height={960}
-          className="h-[36rem] w-auto sm:h-[40rem] pixelated drop-shadow-[0_0_2px_rgba(0,0,0,1)] drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+          width={600}
+          height={600}
+          className="h-[20rem] w-[20rem] sm:h-[24rem] sm:w-[24rem] object-contain pixelated drop-shadow-[0_0_2px_rgba(0,0,0,1)] drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]"
           style={{ imageRendering: "pixelated" }}
           priority
         />
